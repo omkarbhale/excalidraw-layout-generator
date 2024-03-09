@@ -99,6 +99,5 @@ function draw() {
         text(id, nodes[id].position.x, nodes[id].position.y);
     }
 
-    // Only iterate 100 times
     if (frameCount == 150) noLoop();
 }
