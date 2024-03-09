@@ -22,7 +22,7 @@ class Node:
 # Graph is supposed to be unidirectional
 # A->B will automatically include attractive forces for both A->B and B->A
 # Edge A->B and B->A, if included, will produce two times as much force
-def force_directed_layout(nodes: List[Node], iterations: int):
+def force_directed_layout(nodes: List[Node], iterations: int = 150):
     def dist(x1, y1, x2, y2):
         return sqrt((x2 - x1)**2 + (y2 - y1)**2)
     
