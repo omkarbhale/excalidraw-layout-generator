@@ -74,4 +74,30 @@ def force_directed_layout(nodes: List[Node], iterations: int):
                 node.position['y'] += c4 * force['magnitude'] * force['angle']['y'] * 1.5
 
 if __name__ == '__main__':
+    nodes: List[Node] = [
+        Node('A', {'x': 189, 'y': 198}, ['B', 'C', 'E']),
+        Node('B', {'x': 198, 'y': 539}, []),
+        Node('C', {'x': 208, 'y': 220}, []),
+        Node('D', {'x': 50, 'y': 243}, ['E']),
+        Node('E', {'x': 449, 'y': 203}, [])
+    ]
+    force_directed_layout(nodes, 150)
+    for node in nodes:
+        print(f"{node.id} {node.position['x']} {node.position['y']}")
+
+    """
+    From javascript visualization
+    Starting configuration: 
+        A 189 198
+        B 198 539
+        C 208 220
+        D 50 243
+        E 449 203
+    Expected configuration: 
+        A 261.75497728940644 363.39472633706873
+        B 138.25832312191721 473.1206271175769
+        C 386.0912085460245 467.49961804196954
+        D 185.1510878093711 81.2947076335638
+        E 293.3409433433769 197.9445308447649
+    """
     pass

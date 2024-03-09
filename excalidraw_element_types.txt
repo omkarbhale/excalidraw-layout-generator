@@ -1,17 +1,18 @@
-"""
-Excalidraw element types taken from /packages/tests/helpers/api.ts createElement function
+Excalidraw element types taken from
+github.com/excalidraw/excalidraw /packages/tests/helpers/api.ts createElement function
 base =
-- id
-- width
-- height
-- type
-- seed
-- version
-- versionNonce
-- isDeleted
-- groupIds
-- link
-- updated
+    - id
+    - width
+    - height
+    - type
+    - seed
+    - version
+    - versionNonce
+    - isDeleted
+    - groupIds
+    - link
+    - updated
+
     - x
     - y
     - frameId = null
@@ -69,4 +70,3 @@ base =
 8. [frame, magicelement]
     width
     height
-"""
