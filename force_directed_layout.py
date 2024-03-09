@@ -75,6 +75,7 @@ def force_directed_layout(nodes: List[Node], iterations: int = 150):
                 node.position['x'] += c4 * force['magnitude'] * force['angle']['x']
                 node.position['y'] += c4 * force['magnitude'] * force['angle']['y'] * 1.5
 
+# Example usage
 if __name__ == '__main__':
     nodes: List[Node] = [
         Node('A', {'x': 189, 'y': 198}, ['B', 'C', 'E']),
