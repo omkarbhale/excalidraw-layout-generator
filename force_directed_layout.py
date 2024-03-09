@@ -17,6 +17,8 @@ class Node:
         self.position = position
         self.edges = edges
         self.forces = []
+        self.element = None
+        self.center = None
     pass
 
 # Graph is supposed to be unidirectional
